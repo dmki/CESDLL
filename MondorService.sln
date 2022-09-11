@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CESLib", "CESLib\CESLib.csproj", "{265FDECB-D734-4D8D-8A7D-47E917E4A722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CESLibTest", "CESLibTest\CESLibTest.csproj", "{0BBD5489-9F21-4DCA-AF87-F96AA22F0663}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{265FDECB-D734-4D8D-8A7D-47E917E4A722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265FDECB-D734-4D8D-8A7D-47E917E4A722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265FDECB-D734-4D8D-8A7D-47E917E4A722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265FDECB-D734-4D8D-8A7D-47E917E4A722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BBD5489-9F21-4DCA-AF87-F96AA22F0663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBD5489-9F21-4DCA-AF87-F96AA22F0663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBD5489-9F21-4DCA-AF87-F96AA22F0663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBD5489-9F21-4DCA-AF87-F96AA22F0663}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {906C1CFC-8E1A-4281-B1C5-053F9D13D7D5}
+	EndGlobalSection
+EndGlobal

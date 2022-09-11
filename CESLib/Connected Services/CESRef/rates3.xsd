@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://mondor.org/" elementFormDefault="qualified" targetNamespace="http://mondor.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://mondor.org/ces/rates.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CESWS" />
+  <xs:import schemaLocation="https://mondor.org/ces/rates.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="GetCurrencyList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrencyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CESWS" minOccurs="0" name="GetCurrencyListResult" nillable="true" type="q1:ArrayOfCurrency" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrencyCodes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrencyCodesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCurrencyCodesResult" nillable="true" type="q2:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Convert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrencyFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueFrom" type="xs:double" />
+        <xs:element minOccurs="0" name="UserKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConvertResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccessCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckBalanceResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExpirationDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccessCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExpirationDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckExpirationDateResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpgradeAccessCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OriginalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UpgradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpgradeAccessCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpgradeAccessCodeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrencyFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DateOfRate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ValueFrom" type="xs:double" />
+        <xs:element minOccurs="0" name="UserKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConvertByDateResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMinimalDate">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMinimalDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMinimalDateResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRatesMatrix">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccessCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Currencies" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRatesMatrixResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRatesMatrixResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrencyListCSV">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrencyListCSVResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCurrencyListCSVResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRetrospective">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccessCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrenciesTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="days" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRetrospectiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRetrospectiveResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

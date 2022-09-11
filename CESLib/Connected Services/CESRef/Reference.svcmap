@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9f485831-d420-4c94-8c25-fb723252aaf1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mondor.org/ces/rates.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="rates.disco" MetadataType="Disco" ID="b5658ae0-c0c7-4c58-a5ac-9069a4175fbe" SourceId="1" SourceUrl="https://mondor.org/ces/rates.svc?disco" />
+    <MetadataFile FileName="rates.xsd" MetadataType="Schema" ID="01402b59-36f4-4791-86fa-04c6fc32aaeb" SourceId="1" SourceUrl="https://mondor.org/ces/rates.svc?xsd=xsd1" />
+    <MetadataFile FileName="rates.wsdl" MetadataType="Wsdl" ID="2892b40d-6e7a-46bc-8096-26b0a751257e" SourceId="1" SourceUrl="https://mondor.org/ces/rates.svc?wsdl" />
+    <MetadataFile FileName="rates1.xsd" MetadataType="Schema" ID="ad4a6cec-779a-49d0-b4ff-82f85987418f" SourceId="1" SourceUrl="https://mondor.org/ces/rates.svc?xsd=xsd3" />
+    <MetadataFile FileName="rates2.xsd" MetadataType="Schema" ID="1f7b9526-ff77-4b6b-959d-03b25f511af2" SourceId="1" SourceUrl="https://mondor.org/ces/rates.svc?xsd=xsd2" />
+    <MetadataFile FileName="rates3.xsd" MetadataType="Schema" ID="19cd7d10-e37f-405f-9fbc-237dfc9fee96" SourceId="1" SourceUrl="https://mondor.org/ces/rates.svc?xsd=xsd0" />
+    <MetadataFile FileName="rates1.wsdl" MetadataType="Wsdl" ID="dd7e9090-60ef-4956-9251-f2473a40a243" SourceId="1" SourceUrl="https://mondor.org/ces/rates.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
